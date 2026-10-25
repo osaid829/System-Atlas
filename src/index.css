@@ -1,0 +1,62 @@
+:root {
+  font-family: 'Geist', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #e5e7e4;
+  background: #0a0c0e;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --canvas: #0a0c0e;
+  --surface: #101316;
+  --surface-raised: #15191c;
+  --surface-muted: #0d1012;
+  --line: #242a2e;
+  --line-strong: #3a4248;
+  --text: #e5e7e4;
+  --text-muted: #899298;
+  --text-dim: #596168;
+  --signal: #ff5b5b;
+  --signal-soft: rgba(255, 91, 91, 0.12);
+  --amber: #d7a76d;
+  --mono: 'Geist Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--canvas);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 1px solid var(--signal);
+  outline-offset: 2px;
+}
+
+::selection {
+  color: var(--canvas);
+  background: var(--signal);
+}
